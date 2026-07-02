@@ -10,6 +10,19 @@ A step-by-step guide to setting up a custom text-based logo in Fastfetch inside 
 
 > [!WARNING]
 > This guide is verified to work on **Fastfetch version 2.63**. In newer versions (including 2.65), the configuration structure has changed, and this setup may not function correctly.
+> 
+> **How to compile the working version from source using Ninja:**
+> ```bash
+> pkg update && pkg upgrade -y
+> pkg install git cmake clang python ninja binutils -y
+> git clone https://github.com/fastfetch-cli/fastfetch.git
+> cd fastfetch && git checkout 2.63.0
+> mkdir -p build && cd build
+> cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
+> ninja && ninja install
+> ```
+
+---
 
 ### 🛠️ Step 1. Install Chafa
 Install the image-to-character converter:
@@ -61,6 +74,19 @@ Find the `"logo"` block and replace it with the code below. If it does not exist
 
 > [!WARNING]
 > Данное руководство гарантированно работает на версии **Fastfetch 2.63**. На более новых версиях (включая 2.65) структура параметров изменилась, и текущая конфигурация может работать некорректно.
+> 
+> **Как скомпилировать рабочую версию из исходников через Ninja:**
+> ```bash
+> pkg update && pkg upgrade -y
+> pkg install git cmake clang python ninja binutils -y
+> git clone https://github.com/fastfetch-cli/fastfetch.git
+> cd fastfetch && git checkout 2.63.0
+> mkdir -p build && cd build
+> cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
+> ninja && ninja install
+> ```
+
+---
 
 ### 🛠️ Шаг 1. Установка утилиты Chafa
 Установите конвертер изображений в текстовые символы:
