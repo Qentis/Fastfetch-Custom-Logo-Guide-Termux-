@@ -53,7 +53,7 @@ Find the `"logo"` block and replace it with the code below. If it does not exist
 ```json
   "logo": {
       "type": "raw",
-      "source": "/data/data/com.termux/files/home/logo.txt",
+      "source": "~/logo.txt",
       "width": 26,
       "height": 13
   },
@@ -117,7 +117,7 @@ nano ~/.config/fastfetch/config.jsonc
 ```json
   "logo": {
       "type": "raw",
-      "source": "/data/data/com.termux/files/home/logo.txt",
+      "source": "~/logo.txt",
       "width": 26,
       "height": 13
   },
