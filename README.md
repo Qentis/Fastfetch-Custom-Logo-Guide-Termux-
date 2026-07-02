@@ -1,6 +1,6 @@
 # Fastfetch Custom Logo Guide (Termux)
 
-🌐 [English](#english-version) | 🇷🇺 [Русская версия](#русская-версия)
+🌐 [English](#english-version) | [Русский](#русская-версия)
 
 ---
 
